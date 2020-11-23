@@ -1,0 +1,12 @@
+
+<div class="wordgame">
+<h1>New Game</h1>
+<p>Look for a word...</p>
+<% @letters.each do |letter| %>
+    <div class="letters"><%= letter %></div>
+<% end %>
+<form action="/score" method="get">
+  <input type="text" name="word_choice">
+  <input type="submit" value="Let's see!">
+</form>
+</div>
